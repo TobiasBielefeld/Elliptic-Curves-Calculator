@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">EC Calculator</string>
+    <string name="About_Text1">entwickelt von Tobias Bielefeld</string>
+    <string name="About_Text2">danke fürs Nutzen meiner App :)</string>
+    <string name="background_color">Hintergrundfarbe</string>
+    <string name="activity_about">Über</string>
+    <string name="activity_settings">Einstellungen</string>
+    <string name="calculate">berechnen!</string>
+    <string name="check_if_a_curve_is_valid">Kurven gültig sind</string>
+    <string name="check_if_a_point_is_valid">Punkte gültig sind</string>
+    <string name="enter_the_curve">Kurve:</string>
+    <string name="error">Fehler:</string>
+    <string name="error_1"><![CDATA[Modulus muss > 3 sein]]></string>
+    <string name="error_2">Modulus ist nicht prim</string>
+    <string name="error_3">Kurve ist nicht gültig</string>
+    <string name="error_4">Punkt1 liegt nicht auf der Kurve</string>
+    <string name="error_5">Punkt2 liegt nicht auf der Kurve</string>
+    <string name="factor">Faktor:</string>
+    <string name="point_1">Punkt 1:</string>
+    <string name="point_2">Punkt 2:</string>
+    <string name="result">Ergebnis:</string>
+    <string name="step_by_step_solution">zeige Schritt für Schritt Lösung</string>
+    <string name="wrong_input">Falsche Eingabe</string>
+    <string name="noCalcNeeded">Keine Berechnung nötig</string>
+    <string name="p1IsInf">Punkt 1 ist der Point of infinity</string>
+    <string name="p2IsInf">Punkt 2 ist der Point of infinity</string>
+    <string name="x1EqualsX2">x1 ist gleich x2</string>
+    <string name="step">Schritt</string>
+    <string name="Adding">Addieren</string>
+    <string name="Doubling">Verdopplen</string>
+    <string name="activity_order_of_a_point">Ordnung eines Punktes</string>
+    <string name="activity_point_addition">Punkt Addition</string>
+    <string name="activity_doubleAndAdd">Double and Add</string>
+    <string name="setup">Setup:</string>
+    <string name="public_point_A">Generator A</string>
+    <string name="public_point">Öffentlicher Punkt P</string>
+    <string name="private_key_d">Privater Schlüssel d</string>
+    <string name="private_b">Privater Schlüssel KprivB</string>
+    <string name="private_a">Privater Schlüssel KprivA</string>
+    <string name="order_of_a">Ordnung von Punkt A</string>
+    <string name="message_x">Nachricht x</string>
+    <string name="ephermeral_ke">Temporärer Schlüssel kE</string>
+    <string name="check_box_to">Kreuze Boxen an um Details zu zeigen</string>
+    <string name="public_Key">Öffentlicher Schlüssel</string>
+    <string name="signing">Signieren:</string>
+    <string name="signature">Signatur</string>
+    <string name="verification">Überprüfen:</string>
+    <string name="is">ist</string>
+    <string name="not">nicht</string>
+    <string name="valid">valide</string>
+    <string name="Calculation">Berechnung</string>
+    <string name="Protocolls">Protokolle</string>
+    <string name="activity_order_of_a_curve">Ordnung einer Kurve</string>
+    <string name="points_on_the_curve">Punkte auf der Kurve:</string>
+    <string name="show_details">Zeige Details</string>
+    <string name="error_6">d muss zwischen 0 und ord(A) sein</string>
+    <string name="error_7">kE muss zwischen 0 und ord(A) sein</string>
+    <string name="check_if_the_ecdsa_keys_are_valid">ECDSA Schlüssel gültig sind</string>
+    <string name="check_if">Teste, ob…</string>
+    <string name="error_8">ord(A) muss prim sein</string>
+    <string name="cancel">Abbrechen</string>
+    <string name="settings_back_press">Beenden der App bestätigen</string>
+    <string name="settings_back_press_description">Zum Beenden Zurück Taste zwei mal drücken</string>
+    <string name="press_again">Zum Beenden erneut drücken</string>
+
+    <string-array name="settingsColors">
+        <item>Blau</item>
+        <item>Grün</item>
+        <item>Rot</item>
+        <item>Gelb</item>
+    </string-array>
+
+    <string name="about_tab_1">Informationen</string>
+    <string name="about_tab_3">Änderungen</string>
+    <string name="about_tab_2">Lizenz</string>
+    <string name="about_license_top_text">Diese App wurde unter der GPL 3.0 Lizenz veröffentlicht:</string>
+    <string name="about_programm_code_text">SourceCode erhältlich auf:</string>
+    <string name="confirm">Bestätigen</string>
+
+     <string name="ECDHHelpText">
+        Gegeben:\n
+        Kurve E: y²=x³ + a*x + b mod p\n
+        Öffentlicher Punkt P (x,y)\n\n
+        Alice wählt KprivA zwischen 2 und #E-1 und Bob wählt KprivB zwischen 2 und #E-1\n\n
+        Alice berechnet KpubA = KprivA*P und Bob berechnet KpubB = KprivB*P\n\n
+        KpubA und KpubB werden über das Netzwerk ausgetauscht\n\n
+        Alice berechnet KAB = KprivA * KpubB und Bob berechnet KAB = KprivB * KpubA
+    </string>
+
+    <string name="ECDSAHelpText">
+        Gegeben:\n
+        Kurve E: y²=x³ + a*x + b mod p\n
+        Generator A (x,y) mit ord(A)\n\n
+        SETUP:\n
+        Wähle private Zahl d zwischen 0 und ord(A)\n
+        Berechne öffentlichen Punkt B = d*A\n
+        Wähle temp. Schlüssel kE zwischen 0 und ord(A)\n
+        Wähle Nachricht x zum signieren\n\n
+        Öffentlicher Schlüssel = (E , A , B)\n\n
+        SIGNIEREN:\n
+        Berechne R = kE * A\n
+        Setze r = X-Koordinate von R\n
+        Berechne s = (x + d*r) * kE⁻¹ mod q\n
+        Signatur = x, (r , s)\n\n
+        ÜBERPRÜFEN:\n
+        Berechne w = s⁻¹ mod q\n
+        Berechne u1 = w * x mod q\n
+        Berechne u2 = w * r mod q\n
+        Berechne P = u1 * A + u2 * B\n\n
+        Ist X-Koordinate von P = r ?\n
+        Falls ja, Signatur ist valide\n
+        sonst Signatur ist invalide
+    </string>
+</resources>

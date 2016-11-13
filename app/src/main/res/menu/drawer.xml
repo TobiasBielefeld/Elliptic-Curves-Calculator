@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item android:title="@string/Calculation">
+            <menu>
+                <item
+                    android:id="@+id/nav_point_addition"
+                    android:icon="@drawable/one"
+                    android:title="@string/activity_point_addition" />
+                <item
+                    android:id="@+id/nav_doubleAndAdd"
+                    android:icon="@drawable/two"
+                    android:title="@string/activity_doubleAndAdd" />
+                <item
+                    android:id="@+id/nav_order_of_a_point"
+                    android:icon="@drawable/three"
+                    android:title="@string/activity_order_of_a_point" />
+                <item
+                    android:id="@+id/nav_order_of_a_curve"
+                    android:icon="@drawable/four"
+                    android:title="@string/activity_order_of_a_curve" />
+
+            </menu>
+        </item>
+        <item android:title="@string/Protocolls">
+            <menu>
+                <item
+                    android:id="@+id/nav_ecdh"
+                    android:icon="@drawable/five"
+                    android:title="@string/title_activity_ecdh" />
+                <item
+                    android:id="@+id/nav_ecdsa"
+                    android:icon="@drawable/six"
+                    android:title="@string/title_activity_ecdsa" />
+            </menu>
+        </item>
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="@string/activity_settings" />
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/about"
+            android:title="@string/activity_about" />
+    </group>
+
+
+
+</menu>

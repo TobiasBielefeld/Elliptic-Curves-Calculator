@@ -1,0 +1,157 @@
+<resources>
+    <string name="app_name2" translatable="false">Elliptic Curves Calculator</string>
+    <string name="app_name">EC Calculator</string>
+
+    <string name="cancel">Cancel</string>
+    <string name="confirm">Confirm</string>
+    <string name="press_again">Press again to exit</string>
+    <string name="question" translatable="false">question</string>
+
+    <string name="Calculation">Calculation</string>
+    <string name="Protocolls">Protocols</string>
+
+    <string name="navigation_drawer_open" translatable="false">Open navigation drawer</string>
+    <string name="navigation_drawer_close" translatable="false">Close navigation drawer</string>
+
+    <string name="enter_the_curve">Curve:</string>
+    <string name="point_1">Point 1:</string>
+    <string name="point_2">Point 2:</string>
+    <string name="calculate">calculate!</string>
+    <string name="step_by_step_solution">show step by step solution</string>
+    <string name="check_box_to">Check boxes to show details</string>
+
+    <string name="error">Error:</string>
+    <string name="error_1"><![CDATA[Modulus must be > 3]]></string>
+    <string name="error_2">Modulus is not prim</string>
+    <string name="error_3">Curve is not valid</string>
+    <string name="error_4">Point1 is not on the curve</string>
+    <string name="error_5">Point2 is not on the curve</string>
+    <string name="result">Result:</string>
+    <string name="result_1" translatable="false">Point of infinity</string>
+    <string name="wrong_input">Wrong input</string>
+
+    <!-- About -->
+    <string name="activity_about">About</string>
+    <string name="About_Text1">developed by Tobias Bielefeld</string>
+    <string name="About_Text2">thanks for using my app :)</string>
+    <string name="app_version" translatable="false">Version</string>
+    <string name="app_build_date" translatable="false">Build date</string>
+    <string name="about_tab_1">Information</string>
+    <string name="about_tab_2">License</string>
+    <string name="about_tab_3">Changelog</string>
+    <string name="about_build_date" translatable="false">Build date</string>
+    <string name="about_license_top_text">This app is published under the GPL 3.0 license:</string>
+    <string name="about_programm_code_text">Source code available on:</string>
+    <string name="about_programm_code_text2" translatable="false"><a href="https://github.com/TobiasBielefeld/Elliptic-Curves-Calculator">GitHub</a></string>
+
+    <!-- Settings-->
+    <string name="activity_settings">Settings</string>
+    <string name="background_color">Background Colour</string>
+    <string name="check_if_the_ecdsa_keys_are_valid">ECDSA keys are valid</string>
+    <string name="check_if_a_curve_is_valid">curves are valid</string>
+    <string name="check_if_a_point_is_valid">point are valid</string>
+    <string name="check_if">Check, if…</string>
+    <string name="settings_back_press">Confirm closing app</string>
+    <string name="settings_back_press_description">Press back button twice to close game</string>
+    <string name="prefKeyColor" translatable="false">prefKeyColor</string>
+    <string name="prefKeyCurveTest" translatable="false">prefKeyCurveTest</string>
+    <string name="prefKeyPointTest" translatable="false">prefKeyPointTest</string>
+    <string name="prefKeyECDSAKeyTest" translatable="false">prefKeyECDSAKeyTest</string>
+    <string name="pref_key_confirm_closing_game" translatable="false">pref_key_confirm_closing_game</string>
+    <string-array name="settingsColors">
+        <item>Blue</item>
+        <item>Green</item>
+        <item>Red</item>
+        <item>Yellow</item>
+    </string-array>
+    <string-array name="settingsColorsValues" translatable="false">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+
+
+    <!-- Point Addition -->
+    <string name="p1IsInf">Point 1 is the point of infinity</string>
+    <string name="p2IsInf">Point 2 is the point of infinity</string>
+    <string name="noCalcNeeded">No calculation needed</string>
+    <string name="x1EqualsX2">x<sub>1</sub> equals x<sub>2</sub></string>
+    <string name="activity_point_addition">Point addition</string>
+
+    <!-- Double and Add -->
+    <string name="activity_doubleAndAdd">Double and add</string>
+    <string name="factor">Factor:</string>
+    <string name="step">Step</string>
+    <string name="Adding">Adding</string>
+    <string name="Doubling">Doubling</string>
+
+    <!-- Order of a point -->
+    <string name="activity_order_of_a_point">Order of a point</string>
+
+    <!-- Order of a curve -->
+    <string name="activity_order_of_a_curve">Order of a curve</string>
+    <string name="points_on_the_curve">Points on the curve:</string>
+
+    <!-- ECDH -->
+    <string name="title_activity_ecdh" translatable="false">ECDH</string>
+    <string name="private_a">Private Key KprivA</string>
+    <string name="private_b">Private Key KprivB</string>
+    <string name="public_point">Public Point P</string>
+    <string name="ECDHHelpTitle" translatable="false">Elliptic Curves Diffie Hellman</string>
+    <string name="ECDHHelpText">
+        Given:\n
+        Curve E: y²=x³ + a*x + b mod p\n
+        Public Point P (x,y)\n\n
+        Alice chooses KprivA between 2 and #E-1 and Bob chooses KprivB between 2 and #E-1\n\n
+        Alice calculates KpubA = KprivA*P and Bob calculates KpubB = KprivB*P\n\n
+        KpubA and KpubB are exchanged over the network\n\n
+        Alice calculates KAB = KprivA * KpubB and Bob calculates KAB = KprivB * KpubA
+    </string>
+
+
+    <!-- ECDSA -->
+    <string name="public_Key">Public Key:</string>
+    <string name="order_of_a">Order of Point A</string>
+    <string name="title_activity_ecdsa" translatable="false">ECDSA</string>
+    <string name="public_point_A">Generator A</string>
+    <string name="private_key_d">Private Key d</string>
+    <string name="ephermeral_ke">Ephemeral kE</string>
+    <string name="message_x">Message x</string>
+    <string name="setup">Setup:</string>
+    <string name="signing">Signing:</string>
+    <string name="signature">Signature</string>
+    <string name="verification">Verification:</string>
+    <string name="is">is</string>
+    <string name="not">not</string>
+    <string name="valid">valid</string>
+    <string name="error_6">d must be between 0 and ord(A)</string>
+    <string name="error_7">kE must be between 0 and ord(A)</string>
+    <string name="error_8">ord(A) must be prime</string>
+    <string name="ECDSAHelpTitle" translatable="false">Elliptic Curves Digital Signature Algorithm</string>
+    <string name="ECDSAHelpText">
+        Given:\n
+        Curve E: y²=x³ + a*x + b mod p\n
+        Generator A (x,y) with ord(A)\n\n
+        SETUP:\n
+        Choose private number d between 0 and ord(A)\n
+        Calculate public Point B = d*A\n
+        Choose Ephemeral Key kE between 0 and ord(A)\n
+        Choose message x to sign\n
+        Public Key = (E , A , B)\n\n
+        SIGNING:\n
+        Calculate R = kE * A\n
+        Set r = X-Coordinate of R\n
+        Calculate s = (x + d*r) * kE⁻¹ mod q\n
+        Signature = x, (r , s)\n\n
+        VERIFICATION:\n
+        Calculate w = s⁻¹ mod q\n
+        Calculate u1 = w * x mod q\n
+        Calculate u2 = w * r mod q\n
+        Calculate P = u1 * A + u2 * B\n\n
+        Is X-coordinate of P = r ?\n
+        If yes, signature is vaild\n
+        else signature is invalid\n
+    </string>
+
+</resources>

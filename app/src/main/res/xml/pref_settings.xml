@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ListPreference
+        android:key="@string/prefKeyColor"
+        android:defaultValue="1"
+        android:entries="@array/settingsColors"
+        android:entryValues="@array/settingsColorsValues"
+        android:negativeButtonText="@string/cancel"
+        android:positiveButtonText="@null"
+        android:title="@string/background_color"
+        android:summary="%s"/>
+
+    <CheckBoxPreference
+        android:key="@string/pref_key_confirm_closing_game"
+        android:defaultValue="true"
+        android:summary="@string/settings_back_press_description"
+        android:title="@string/settings_back_press" />
+
+    <PreferenceCategory
+        android:key="prefKeyCategory"
+        android:title="@string/check_if">
+
+    <CheckBoxPreference
+            android:key="@string/prefKeyCurveTest"
+            android:defaultValue="true"
+            android:title="@string/check_if_a_curve_is_valid"/>
+
+    <CheckBoxPreference
+        android:key="@string/prefKeyPointTest"
+        android:defaultValue="true"
+        android:title="@string/check_if_a_point_is_valid"/>
+
+    <CheckBoxPreference
+        android:key="@string/prefKeyECDSAKeyTest"
+        android:defaultValue="true"
+        android:title="@string/check_if_the_ecdsa_keys_are_valid"/>
+    </PreferenceCategory>
+
+</PreferenceScreen>
