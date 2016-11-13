@@ -1,14 +1,6 @@
 apply plugin: 'com.android.application'
 
 android {
-    signingConfigs {
-        config {
-            keyAlias 'myandroid key'
-            keyPassword 'Garfield_62'
-            storeFile file('/home/tobias/Projekte/AndroidStudio/myKeyStore.jks')
-            storePassword 'Garfield_62'
-        }
-    }
 
     compileSdkVersion 24
     buildToolsVersion "23.0.2"
