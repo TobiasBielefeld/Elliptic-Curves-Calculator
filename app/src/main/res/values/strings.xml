@@ -19,6 +19,7 @@
     <string name="calculate">calculate!</string>
     <string name="step_by_step_solution">show step by step solution</string>
     <string name="check_box_to">Check boxes to show details</string>
+    <string name="show_details">Show details</string>
 
     <string name="error">Error:</string>
     <string name="error_1"><![CDATA[Modulus must be > 3]]></string>
