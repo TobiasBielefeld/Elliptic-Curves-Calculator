@@ -1,5 +1,5 @@
-[![GitHub version](https://badge.fury.io/gh/tobiasBielefeld%2FElliptic-Curves-Calculator
-.svg)](https://badge.fury.io/gh/tobiasBielefeld%2FElliptic-Curves-Calculator)
+[![GitHub version](https://badge.fury.io/gh/TobiasBielefeld%2FElliptic-Curves-Calculator
+.svg)](https://badge.fury.io/gh/TobiasBielefeld%2FElliptic-Curves-Calculator)
 ![license](http://img.shields.io/badge/license-GPLv3-brightgreen.svg)
 ![platform](http://img.shields.io/badge/platform-Android-blue.svg)
 
