@@ -232,7 +232,7 @@ public class Calculation {
 
     //sets backgrounds for the activity
     public void setBackground(Toolbar toolbar, View view) {
-        switch (savedData.getString("prefKeyColor", "1")) {
+        switch (savedData.getString("prefKeyColor", "5")) {
             case "1":
                 toolbar.setBackgroundResource(R.color.blue);
                 view.setBackgroundResource(R.drawable.color_blue);

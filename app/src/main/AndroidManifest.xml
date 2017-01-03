@@ -48,6 +48,7 @@
         <activity
             android:name=".ui.About"
             android:label="@string/activity_about"
+            android:configChanges="keyboardHidden|orientation|screenSize"
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="stateHidden" />
         <activity

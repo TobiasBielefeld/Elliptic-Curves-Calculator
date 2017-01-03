@@ -30,6 +30,7 @@ import android.support.v7.widget.Toolbar;
 import android.text.Html;
 import android.text.method.LinkMovementMethod;
 import android.view.MenuItem;
+import android.webkit.WebView;
 import android.widget.RelativeLayout;
 import android.widget.TabHost;
 import android.widget.TextView;
@@ -67,6 +68,7 @@ public class About extends AppCompatActivity
         RelativeLayout relativeLayoutAbout = (RelativeLayout) findViewById(R.id.relativeLayoutAbout);
         TextView aboutTextViewGitHubLink = (TextView) findViewById(R.id.aboutTextViewGitHubLink);
         TextView aboutLicenseText = (TextView) findViewById(R.id.aboutLicenseText);
+        TextView aboutChangeLog = (TextView) findViewById(R.id.about_tab3_textView);
 
         /* drawer stuff */
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
@@ -122,6 +124,15 @@ public class About extends AppCompatActivity
             InputStream is = getAssets().open("license.html");
             aboutLicenseText.setText(Html.fromHtml(new String(getStringFromInputStream(is))));
         } catch (IOException ignored) { }
+
+
+        try {                                                                                       //show the gpl license from the license.html in the assets folder
+            InputStream is = getAssets().open("changelog.html");
+            aboutChangeLog.setText(Html.fromHtml(new String(getStringFromInputStream(is))));
+        } catch (IOException ignored) { }
+
+        //WebView webView = (WebView) view.findViewById(R.id.about_tab3_webview);
+        //webView.loadUrl("file:///android_asset/changelog.html");
     }
 
     @Override
