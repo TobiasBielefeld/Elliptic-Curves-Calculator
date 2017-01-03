@@ -9,6 +9,26 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="Ver. 2.2.2"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textStyle="normal|bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Some error fixes"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="New icon"
+        android:layout_marginBottom="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="Ver. 2.2.1"
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:textStyle="normal|bold" />
@@ -17,8 +37,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="Made the app open source under GPLv3 license"
-        android:id="@+id/textView23" />
+        android:text="Made the app open source under GPLv3 license"/>
 
     <TextView
         android:layout_width="wrap_content"

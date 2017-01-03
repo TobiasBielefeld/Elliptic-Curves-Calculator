@@ -3,7 +3,7 @@
 
     <ListPreference
         android:key="@string/prefKeyColor"
-        android:defaultValue="1"
+        android:defaultValue="5"
         android:entries="@array/settingsColors"
         android:entryValues="@array/settingsColorsValues"
         android:negativeButtonText="@string/cancel"

@@ -56,6 +56,9 @@ public class Settings extends AppCompatPreferenceActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         super.setContentView(R.layout.activity_settings);
+
+        c.loadSharedPref(this);
+
         ((ViewGroup) getListView().getParent()).setPadding(0, 0, 0, 0);
         addPreferencesFromResource(R.xml.pref_settings);
 

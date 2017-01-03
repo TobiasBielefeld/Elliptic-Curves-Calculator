@@ -69,6 +69,7 @@
         <item>Grün</item>
         <item>Rot</item>
         <item>Gelb</item>
+        <item>Weiß</item>
     </string-array>
 
     <string name="about_tab_1">Informationen</string>

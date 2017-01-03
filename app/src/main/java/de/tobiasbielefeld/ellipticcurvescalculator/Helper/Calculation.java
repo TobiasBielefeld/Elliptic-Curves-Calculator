@@ -1,5 +1,7 @@
 package de.tobiasbielefeld.ellipticcurvescalculator.Helper;
 
+import android.app.Activity;
+import android.preference.PreferenceManager;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.EditText;
@@ -247,6 +249,10 @@ public class Calculation {
                 toolbar.setBackgroundResource(R.color.yellow);
                 view.setBackgroundResource(R.drawable.color_yellow);
                 break;
+            case "5":
+                toolbar.setBackgroundResource(R.color.colorPrimary);
+                view.setBackgroundResource(R.drawable.color_white);
+                break;
         }
     }
 
@@ -286,5 +292,13 @@ public class Calculation {
         }
 
         edit.apply();
+    }
+
+    public void loadSharedPref(Activity activity){
+        if (savedData==null) {
+            savedData = PreferenceManager.getDefaultSharedPreferences(activity);
+            edit = savedData.edit();
+            edit.apply();
+        }
     }
 }
