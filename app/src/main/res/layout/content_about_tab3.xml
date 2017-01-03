@@ -23,7 +23,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="New white background"/>
+        android:text="New background color: White"/>
 
     <TextView
         android:layout_width="match_parent"
