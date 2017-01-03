@@ -23,8 +23,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="New white background"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
         android:text="New icon"
         android:layout_marginBottom="20dp" />
+
 
     <TextView
         android:layout_width="wrap_content"
