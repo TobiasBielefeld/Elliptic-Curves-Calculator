@@ -52,7 +52,7 @@ public class Calculation {
             s2.set(point2.x - point1.x);
             s2.set(invers(s2.get(), curve.p()));
 
-            output  = set("s = ( y - y1 ) * ( x2 - x1 )⁻¹ mod p\n");
+            output  = set("s = ( y2 - y1 ) * ( x2 - x1 )⁻¹ mod p\n");
             output += set("  = ( %s - %s ) * ( %s - %s )⁻¹ mod %s\n", point2.y, point1.y, point2.x, point1.x, curve.p());
             output += set("  =  %s * %s mod %s\n", s1.get(), s2.get(), curve.p());
         }

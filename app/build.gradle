@@ -10,7 +10,7 @@ android {
         applicationId "de.tobiasbielefeld.ellipticcurvescalculator"
         minSdkVersion 9
         targetSdkVersion 25
-        versionCode 11
+        versionCode 12
         versionName "2.2.2"
     }
     buildTypes {
